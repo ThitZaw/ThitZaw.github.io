@@ -1,0 +1,9 @@
+body .container {
+    background-color: rgb(238, 238, 234);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+div .tt-letter-spacing {
+    letter-spacing: 3px;
+}
