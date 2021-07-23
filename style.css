@@ -7,3 +7,7 @@ body .container {
 div .tt-letter-spacing {
     letter-spacing: 3px;
 }
+
+img {
+    border-radius: 50%;
+  }
