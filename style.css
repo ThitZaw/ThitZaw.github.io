@@ -1,3 +1,7 @@
+body {
+    position: relative; 
+}
+
 body .container {
     background-color: rgb(253, 253, 253);
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -11,3 +15,7 @@ div .tt-letter-spacing {
 img {
     border-radius: 50%;
   }
+
+nav {
+    background-color: rgb(253, 253, 253);
+}

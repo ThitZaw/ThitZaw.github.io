@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a2e7c5f95f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css"/>
     <title>Thit Thit Zaw</title>
 </head>
-<body>        
+<body data-spy="scroll" data-target=".navbar" data-offset="50">     
     <div class="container container-fluid p-3 my-3">
         <div class="row">
             <div class="col text-left">
@@ -25,16 +24,49 @@
                 <p class="position"><h4>Web Developer</h4></p>
             </div>
         </div>
+        <br/>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#aboutme">About Me <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#work_experience">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#certification">Certification</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#language">Language</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
     </div>
-    <div class="container p-3 my-3">
+    
+    <div class="container p-3 my-3" >
         <div class="row">
             <div class="col-sm-8">
-                <h3 class="tt-letter-spacing">ABOUT ME</h3>
+                <h3 class="tt-letter-spacing" id="aboutme">About Me</h3>
+                <hr/>
                 <p>Hard-working web developer with a flair for creating elegant solutions in the least amount of time.<br/> 
                     Developed an odoo ecommerce system and customize solution based on user need.
                     <br/>Passionate about software architecture and newbie in machine learning and 
                     had experience in working with machine learning Algorithm.</p>
-                <h3 class="tt-letter-spacing">WORK EXPERIENCE</h3>
+                <br/>
+                <h3 class="tt-letter-spacing" id="work_experience">Work Experience</h3>
+                <hr/>
                 <br/>
                 <p><b>Odoo Developer(Aug 2019 - present)</b></p>
                 <p>Global Connect Asia.Co.Ltd</p>
@@ -47,19 +79,9 @@
                 <br/>
                 <p><b>Internship(March 2017- May 2017)</b></p>
                 <p>BEE Data Myanmar.Co.Ltd</p>
-
-            </div>
-            <div class="col-sm-4 text-left" id="contact">
-                <!-- contact -->
-                <h4 class="tt-letter-spacing">CONTACT</h4>
-                <hr/>
-                <p><i class='fas fa-mobile'></i>  +95 9425847943</p>
-                <p><i class='fas fa-envelope'></i> sophie.thitzaw@gmail.com</p>
-                <p><i class='fas fa-map-marker-alt'></i>  Yangon, Myanmar</p>
-                <p><i class='fab fa-linkedin-in'></i>  linkedin.com/in/thitthit-zaw-320492152</p>
                 <br/>
                 <!-- EDUCATION -->
-                <h4 class="tt-letter-spacing">Education</h4>
+                <h4 class="tt-letter-spacing" id="education">Education</h4>
                 <hr/>
                 <p>M.C.Sc/Computer Science<br/>University of Computer Studies,Yangon<br/>2015-2018<br/>Thesis Title :"Myanmar Text Classifier Using Genetic Algorithm"</p>
                 <p>B.C.Sc(hons)/Computer Science<br/>University of Computer Studies,Yangon<br/>2013-2014</p>
@@ -68,14 +90,14 @@
                 <br/>2010-2012</p>
                 <br/>
                 <!-- Certification -->
-                <h4 class="tt-letter-spacing">Certification</h4>
+                <h4 class="tt-letter-spacing" id="certification">Certification</h4>
                 <hr/>
                 <p>Certificate on Basic Diplomatic Skill 37 Batch, Ministry of Foreign Affair</p>
                 <p>Professional Diploma in Software Engineering Course (ICTTI) 1 April, 2016</p>
                 <p>IELTS –overall band Sore -7.0</p>
                 <br/>
                 <!-- skill -->
-                <h4 class="tt-letter-spacing">Skills</h4>
+                <h4 class="tt-letter-spacing" id="skills">Skills</h4>
                 <hr/>
                 <ul>
                     <li>Object-oriented programming, object modeling and relational databases</li>
@@ -86,7 +108,7 @@
                 </ul>
                 <br/>
                 <!-- Language -->
-                <h4 class="tt-letter-spacing">Language</h4>
+                <h4 class="tt-letter-spacing" id="language">Language</h4>
                 <hr/>
                 <ul>
                     <li>Programming Languages: Python, SQL, JavaScript</li>
@@ -98,6 +120,16 @@
                         <li>Django</li>
                         <li>Django Rest Framework</li></ul>
                 </ul>
+                <br/>
+            </div>
+            <div class="col-sm-4 text-left" id="contact">
+                <!-- contact -->
+                <h4 class="tt-letter-spacing">CONTACT</h4>
+                <hr/>
+                <p><i class='fas fa-mobile'></i>  +95 9425847943</p>
+                <p><i class='fas fa-envelope'></i> sophie.thitzaw@gmail.com</p>
+                <p><i class='fas fa-map-marker-alt'></i>  Yangon, Myanmar</p>
+                <p><i class='fab fa-linkedin-in'></i>  linkedin.com/in/thitthit-zaw-320492152</p>
                 <br/>
             </div>
         </div>
